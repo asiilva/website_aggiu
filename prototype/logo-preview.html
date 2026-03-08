@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aggiu Logo Concepts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #F8FAFC;
+      color: #1E293B;
+    }
+    .page-header {
+      text-align: center;
+      padding: 3rem 1.5rem 1rem;
+    }
+    .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .page-header p { color: #64748B; }
+
+    .concepts {
+      display: grid;
+      gap: 3rem;
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    .concept {
+      background: white;
+      border-radius: 16px;
+      border: 1px solid #E2E8F0;
+      overflow: hidden;
+    }
+
+    .concept-header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .concept-header h2 { font-size: 1.25rem; }
+    .concept-header p { color: #64748B; font-size: 0.875rem; margin-top: 0.25rem; }
+
+    .concept-demos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .demo {
+      padding: 3rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .demo-light { background: #FFFFFF; }
+    .demo-dark { background: #0F172A; }
+
+    .demo-sizes {
+      padding: 2rem;
+      border-top: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .demo-sizes .size-label {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .original {
+      border: 2px dashed #E2E8F0;
+    }
+
+    .original .concept-header {
+      background: #FEF2F2;
+      border-bottom-color: #FECACA;
+    }
+
+    @media (max-width: 768px) {
+      .concept-demos { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <h1>Aggiu — Logo Concepts</h1>
+    <p>Modernized versions preserving the dot-cluster DNA from the original logo</p>
+  </div>
+
+  <div class="concepts">
+
+    <!-- ORIGINAL -->
+    <div class="concept original">
+      <div class="concept-header">
+        <h2>Current Logo (reference)</h2>
+        <p>The existing dot-cluster logo — organic, but lacks structure and scalability</p>
+      </div>
+      <div class="concept-demos">
+        <div class="demo demo-light">
+          <img src="https://static.wixstatic.com/media/d6dedb_c760b3a9a3c645628f9f5d45fb3dbb34~mv2.png/v1/fill/w_376,h_156,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AGGIU%20LOGO%20BAD.png" alt="Current Aggiu logo" style="max-height: 80px;">
+        </div>
+        <div class="demo demo-dark">
+          <img src="https://static.wixstatic.com/media/d6dedb_c760b3a9a3c645628f9f5d45fb3dbb34~mv2.png/v1/fill/w_376,h_156,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/AGGIU%20LOGO%20BAD.png" alt="Current Aggiu logo" style="max-height: 80px; filter: brightness(0) invert(1); opacity: 0.5;">
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 1: Structured Grid Dots -->
+    <div class="concept">
+      <div class="concept-header">
+        <h2>Concept 1 — Structured Grid</h2>
+        <p>The original dots reorganized into a clean ascending grid pattern. Dots grow larger toward the top-right, suggesting growth. The teal accent dot adds the tech-forward feel.</p>
+      </div>
+      <div class="concept-demos">
+        <div class="demo demo-light">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Dot grid mark -->
+            <circle cx="8" cy="54" r="3.5" fill="#94A3B8"/>
+            <circle cx="8" cy="40" r="4" fill="#64748B"/>
+            <circle cx="8" cy="25" r="4.5" fill="#0F172A"/>
+
+            <circle cx="23" cy="54" r="4" fill="#64748B"/>
+            <circle cx="23" cy="40" r="5" fill="#0F172A"/>
+            <circle cx="23" cy="25" r="5.5" fill="#0F172A"/>
+
+            <circle cx="40" cy="54" r="4.5" fill="#0F172A"/>
+            <circle cx="40" cy="40" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="25" r="6" fill="#0066FF"/>
+            <circle cx="40" cy="9" r="5" fill="#0066FF"/>
+
+            <circle cx="58" cy="54" r="5" fill="#0066FF"/>
+            <circle cx="58" cy="40" r="6" fill="#0066FF"/>
+            <circle cx="58" cy="25" r="6.5" fill="#0066FF"/>
+            <circle cx="58" cy="9" r="7" fill="#00D4AA"/>
+
+            <!-- Text -->
+            <text x="82" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+        </div>
+        <div class="demo demo-dark">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="54" r="3.5" fill="#475569"/>
+            <circle cx="8" cy="40" r="4" fill="#64748B"/>
+            <circle cx="8" cy="25" r="4.5" fill="#CBD5E1"/>
+
+            <circle cx="23" cy="54" r="4" fill="#64748B"/>
+            <circle cx="23" cy="40" r="5" fill="#CBD5E1"/>
+            <circle cx="23" cy="25" r="5.5" fill="#E2E8F0"/>
+
+            <circle cx="40" cy="54" r="4.5" fill="#CBD5E1"/>
+            <circle cx="40" cy="40" r="5.5" fill="#E2E8F0"/>
+            <circle cx="40" cy="25" r="6" fill="#3B82F6"/>
+            <circle cx="40" cy="9" r="5" fill="#3B82F6"/>
+
+            <circle cx="58" cy="54" r="5" fill="#3B82F6"/>
+            <circle cx="58" cy="40" r="6" fill="#3B82F6"/>
+            <circle cx="58" cy="25" r="6.5" fill="#3B82F6"/>
+            <circle cx="58" cy="9" r="7" fill="#00D4AA"/>
+
+            <text x="82" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#F8FAFC">aggiu</text>
+          </svg>
+        </div>
+      </div>
+      <div class="demo-sizes">
+        <div>
+          <svg width="40" height="40" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="54" r="3.5" fill="#94A3B8"/>
+            <circle cx="8" cy="40" r="4" fill="#64748B"/>
+            <circle cx="8" cy="25" r="4.5" fill="#0F172A"/>
+            <circle cx="23" cy="54" r="4" fill="#64748B"/>
+            <circle cx="23" cy="40" r="5" fill="#0F172A"/>
+            <circle cx="23" cy="25" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="54" r="4.5" fill="#0F172A"/>
+            <circle cx="40" cy="40" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="25" r="6" fill="#0066FF"/>
+            <circle cx="40" cy="9" r="5" fill="#0066FF"/>
+            <circle cx="58" cy="54" r="5" fill="#0066FF"/>
+            <circle cx="58" cy="40" r="6" fill="#0066FF"/>
+            <circle cx="58" cy="25" r="6.5" fill="#0066FF"/>
+            <circle cx="58" cy="9" r="7" fill="#00D4AA"/>
+          </svg>
+          <div class="size-label">Favicon</div>
+        </div>
+        <div>
+          <svg width="160" height="40" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="54" r="3.5" fill="#94A3B8"/>
+            <circle cx="8" cy="40" r="4" fill="#64748B"/>
+            <circle cx="8" cy="25" r="4.5" fill="#0F172A"/>
+            <circle cx="23" cy="54" r="4" fill="#64748B"/>
+            <circle cx="23" cy="40" r="5" fill="#0F172A"/>
+            <circle cx="23" cy="25" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="54" r="4.5" fill="#0F172A"/>
+            <circle cx="40" cy="40" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="25" r="6" fill="#0066FF"/>
+            <circle cx="40" cy="9" r="5" fill="#0066FF"/>
+            <circle cx="58" cy="54" r="5" fill="#0066FF"/>
+            <circle cx="58" cy="40" r="6" fill="#0066FF"/>
+            <circle cx="58" cy="25" r="6.5" fill="#0066FF"/>
+            <circle cx="58" cy="9" r="7" fill="#00D4AA"/>
+            <text x="82" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+          <div class="size-label">Navbar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 2: Triangular Cluster -->
+    <div class="concept">
+      <div class="concept-header">
+        <h2>Concept 2 — Ascending Triangle</h2>
+        <p>Dots arranged in a triangular/pyramid shape — 1 dot at top, expanding down. Reads as upward momentum. Simpler than the grid, bolder mark.</p>
+      </div>
+      <div class="concept-demos">
+        <div class="demo demo-light">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Triangle dot mark -->
+            <!-- Row 1 (top) - 1 dot -->
+            <circle cx="30" cy="8" r="7" fill="#00D4AA"/>
+            <!-- Row 2 - 2 dots -->
+            <circle cx="19" cy="26" r="6.5" fill="#0066FF"/>
+            <circle cx="41" cy="26" r="6.5" fill="#0066FF"/>
+            <!-- Row 3 - 3 dots -->
+            <circle cx="8" cy="44" r="6" fill="#0F172A"/>
+            <circle cx="30" cy="44" r="6" fill="#0066FF"/>
+            <circle cx="52" cy="44" r="6" fill="#0F172A"/>
+            <!-- Row 4 - 4 dots -->
+            <circle cx="2" cy="61" r="4" fill="#94A3B8"/>
+            <circle cx="20" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="40" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="58" cy="61" r="4" fill="#94A3B8"/>
+
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+        </div>
+        <div class="demo demo-dark">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="8" r="7" fill="#00D4AA"/>
+            <circle cx="19" cy="26" r="6.5" fill="#3B82F6"/>
+            <circle cx="41" cy="26" r="6.5" fill="#3B82F6"/>
+            <circle cx="8" cy="44" r="6" fill="#CBD5E1"/>
+            <circle cx="30" cy="44" r="6" fill="#3B82F6"/>
+            <circle cx="52" cy="44" r="6" fill="#CBD5E1"/>
+            <circle cx="2" cy="61" r="4" fill="#475569"/>
+            <circle cx="20" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="40" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="58" cy="61" r="4" fill="#475569"/>
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#F8FAFC">aggiu</text>
+          </svg>
+        </div>
+      </div>
+      <div class="demo-sizes">
+        <div>
+          <svg width="40" height="40" viewBox="0 0 65 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="8" r="7" fill="#00D4AA"/>
+            <circle cx="19" cy="26" r="6.5" fill="#0066FF"/>
+            <circle cx="41" cy="26" r="6.5" fill="#0066FF"/>
+            <circle cx="8" cy="44" r="6" fill="#0F172A"/>
+            <circle cx="30" cy="44" r="6" fill="#0066FF"/>
+            <circle cx="52" cy="44" r="6" fill="#0F172A"/>
+            <circle cx="2" cy="61" r="4" fill="#94A3B8"/>
+            <circle cx="20" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="40" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="58" cy="61" r="4" fill="#94A3B8"/>
+          </svg>
+          <div class="size-label">Favicon</div>
+        </div>
+        <div>
+          <svg width="160" height="40" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="8" r="7" fill="#00D4AA"/>
+            <circle cx="19" cy="26" r="6.5" fill="#0066FF"/>
+            <circle cx="41" cy="26" r="6.5" fill="#0066FF"/>
+            <circle cx="8" cy="44" r="6" fill="#0F172A"/>
+            <circle cx="30" cy="44" r="6" fill="#0066FF"/>
+            <circle cx="52" cy="44" r="6" fill="#0F172A"/>
+            <circle cx="2" cy="61" r="4" fill="#94A3B8"/>
+            <circle cx="20" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="40" cy="61" r="4.5" fill="#64748B"/>
+            <circle cx="58" cy="61" r="4" fill="#94A3B8"/>
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+          <div class="size-label">Navbar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 3: Minimal Connected Dots -->
+    <div class="concept">
+      <div class="concept-header">
+        <h2>Concept 3 — Connected Constellation</h2>
+        <p>Fewer dots connected by thin lines — like a constellation or network graph. Conveys connection, intelligence, technology. Cleanest and most modern option.</p>
+      </div>
+      <div class="concept-demos">
+        <div class="demo demo-light">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Connection lines -->
+            <line x1="12" y1="52" x2="28" y2="35" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="12" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="62" y2="8" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="45" x2="62" y2="55" stroke="#E2E8F0" stroke-width="1.5"/>
+
+            <!-- Dots -->
+            <circle cx="12" cy="52" r="5" fill="#94A3B8"/>
+            <circle cx="12" cy="18" r="4" fill="#64748B"/>
+            <circle cx="28" cy="35" r="7" fill="#0F172A"/>
+            <circle cx="48" cy="45" r="5.5" fill="#0066FF"/>
+            <circle cx="48" cy="18" r="6" fill="#0066FF"/>
+            <circle cx="62" cy="8" r="7.5" fill="#00D4AA"/>
+            <circle cx="62" cy="55" r="4" fill="#0066FF"/>
+
+            <text x="84" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+        </div>
+        <div class="demo demo-dark">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="52" x2="28" y2="35" stroke="#334155" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="12" y2="18" stroke="#334155" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="45" stroke="#334155" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="18" stroke="#334155" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="48" y2="45" stroke="#334155" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="62" y2="8" stroke="#334155" stroke-width="1.5"/>
+            <line x1="48" y1="45" x2="62" y2="55" stroke="#334155" stroke-width="1.5"/>
+
+            <circle cx="12" cy="52" r="5" fill="#475569"/>
+            <circle cx="12" cy="18" r="4" fill="#64748B"/>
+            <circle cx="28" cy="35" r="7" fill="#CBD5E1"/>
+            <circle cx="48" cy="45" r="5.5" fill="#3B82F6"/>
+            <circle cx="48" cy="18" r="6" fill="#3B82F6"/>
+            <circle cx="62" cy="8" r="7.5" fill="#00D4AA"/>
+            <circle cx="62" cy="55" r="4" fill="#3B82F6"/>
+
+            <text x="84" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#F8FAFC">aggiu</text>
+          </svg>
+        </div>
+      </div>
+      <div class="demo-sizes">
+        <div>
+          <svg width="40" height="40" viewBox="0 0 70 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="52" x2="28" y2="35" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="12" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="62" y2="8" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="45" x2="62" y2="55" stroke="#E2E8F0" stroke-width="1.5"/>
+            <circle cx="12" cy="52" r="5" fill="#94A3B8"/>
+            <circle cx="12" cy="18" r="4" fill="#64748B"/>
+            <circle cx="28" cy="35" r="7" fill="#0F172A"/>
+            <circle cx="48" cy="45" r="5.5" fill="#0066FF"/>
+            <circle cx="48" cy="18" r="6" fill="#0066FF"/>
+            <circle cx="62" cy="8" r="7.5" fill="#00D4AA"/>
+            <circle cx="62" cy="55" r="4" fill="#0066FF"/>
+          </svg>
+          <div class="size-label">Favicon</div>
+        </div>
+        <div>
+          <svg width="160" height="40" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="52" x2="28" y2="35" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="12" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="28" y1="35" x2="48" y2="18" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="48" y2="45" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="18" x2="62" y2="8" stroke="#E2E8F0" stroke-width="1.5"/>
+            <line x1="48" y1="45" x2="62" y2="55" stroke="#E2E8F0" stroke-width="1.5"/>
+            <circle cx="12" cy="52" r="5" fill="#94A3B8"/>
+            <circle cx="12" cy="18" r="4" fill="#64748B"/>
+            <circle cx="28" cy="35" r="7" fill="#0F172A"/>
+            <circle cx="48" cy="45" r="5.5" fill="#0066FF"/>
+            <circle cx="48" cy="18" r="6" fill="#0066FF"/>
+            <circle cx="62" cy="8" r="7.5" fill="#00D4AA"/>
+            <circle cx="62" cy="55" r="4" fill="#0066FF"/>
+            <text x="84" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+          <div class="size-label">Navbar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCEPT 4: Hybrid - Dots + Rising Bars -->
+    <div class="concept">
+      <div class="concept-header">
+        <h2>Concept 4 — Dot Matrix Rising</h2>
+        <p>Hybrid approach: keeps the dot identity but arranges them as a rising bar chart pattern. Each column is a stack of dots, ascending left to right. Clean, data-driven, growth-oriented.</p>
+      </div>
+      <div class="concept-demos">
+        <div class="demo demo-light">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Col 1: 1 dot -->
+            <circle cx="8" cy="57" r="5.5" fill="#94A3B8"/>
+
+            <!-- Col 2: 2 dots -->
+            <circle cx="24" cy="57" r="5.5" fill="#64748B"/>
+            <circle cx="24" cy="42" r="5.5" fill="#0F172A"/>
+
+            <!-- Col 3: 3 dots -->
+            <circle cx="40" cy="57" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="40" cy="27" r="5.5" fill="#0066FF"/>
+
+            <!-- Col 4: 4 dots -->
+            <circle cx="56" cy="57" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="27" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="12" r="5.5" fill="#00D4AA"/>
+
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+        </div>
+        <div class="demo demo-dark">
+          <svg width="280" height="70" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="57" r="5.5" fill="#475569"/>
+            <circle cx="24" cy="57" r="5.5" fill="#64748B"/>
+            <circle cx="24" cy="42" r="5.5" fill="#CBD5E1"/>
+            <circle cx="40" cy="57" r="5.5" fill="#CBD5E1"/>
+            <circle cx="40" cy="42" r="5.5" fill="#3B82F6"/>
+            <circle cx="40" cy="27" r="5.5" fill="#3B82F6"/>
+            <circle cx="56" cy="57" r="5.5" fill="#3B82F6"/>
+            <circle cx="56" cy="42" r="5.5" fill="#3B82F6"/>
+            <circle cx="56" cy="27" r="5.5" fill="#3B82F6"/>
+            <circle cx="56" cy="12" r="5.5" fill="#00D4AA"/>
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#F8FAFC">aggiu</text>
+          </svg>
+        </div>
+      </div>
+      <div class="demo-sizes">
+        <div>
+          <svg width="40" height="40" viewBox="0 0 64 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="57" r="5.5" fill="#94A3B8"/>
+            <circle cx="24" cy="57" r="5.5" fill="#64748B"/>
+            <circle cx="24" cy="42" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="57" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="40" cy="27" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="57" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="27" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="12" r="5.5" fill="#00D4AA"/>
+          </svg>
+          <div class="size-label">Favicon</div>
+        </div>
+        <div>
+          <svg width="160" height="40" viewBox="0 0 280 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="57" r="5.5" fill="#94A3B8"/>
+            <circle cx="24" cy="57" r="5.5" fill="#64748B"/>
+            <circle cx="24" cy="42" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="57" r="5.5" fill="#0F172A"/>
+            <circle cx="40" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="40" cy="27" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="57" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="42" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="27" r="5.5" fill="#0066FF"/>
+            <circle cx="56" cy="12" r="5.5" fill="#00D4AA"/>
+            <text x="80" y="44" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="36" fill="#0F172A">aggiu</text>
+          </svg>
+          <div class="size-label">Navbar</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
